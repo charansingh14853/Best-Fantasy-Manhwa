@@ -65,7 +65,6 @@ const manhwaData = [
         description: 'Chen Fan, a powerful cultivator, is reborn in the modern world. Watch as he reclaims his power and adjusts to this new era.',
         image: 'C:/Users/91998/Downloads/maxresdefault.jpg'
     },
-    // The remaining entries are filled similarly, with title, genre, description, and image link.
     {
         title: 'Omniscient Reader\'s Viewpoint',
         genre: 'Action, Fantasy, Supernatural',
@@ -129,12 +128,8 @@ function showManhwaDetails(index) {
         <p><strong>Genre:</strong> ${manhwa.genre}</p>
         <p>${manhwa.description}</p>
     `;
-
-    // Scroll to the details section smoothly
     details.scrollIntoView({ behavior: 'smooth' });
 }
-
-// Search function to filter manhwa titles
 function searchManhwa() {
     const input = document.getElementById('search-bar').value.toLowerCase();
     const manhwaItems = document.querySelectorAll('#manhwa-list li');
